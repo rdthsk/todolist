@@ -16,8 +16,9 @@
 
 	</head>
 	<body>
-<input type= "text" id="input" />
-<input type= "button" value= "add Todo" onclick= 'addText()' />
+<input type= "text" id="input" onkeydown="if (event.keyCode == 13) document.getElementById('search').click()" />
+<input type= "button" value= "add Todo" onclick= 'addText()'id= "search" />
 <p id= "do"> </p>
+
 	</body>
 	</html>
